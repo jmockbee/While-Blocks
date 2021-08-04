@@ -1,9 +1,16 @@
 blocks = int(input("Enter the number of blocks: "))
 
+height = 0
 
-for blocks in range(2, 1):
-    print(blocks)
+rows = 1
 
-else:
+while rows <= blocks:
+
+    height += 1
+    blocks -= rows
+    if blocks <= rows:
+        break
+    rows += 1
+
     
 print("The height of the pyramid:", height)
